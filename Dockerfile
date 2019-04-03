@@ -20,7 +20,7 @@ ENV PATH ${GRADLE_HOME}/bin:$PATH
 ENV ANDROID_TARGET_SDK="android-28" \
     ANDROID_BUILD_TOOLS="28.0.3" \
     ANDROID_SDK_TOOLS="3859397" \
-    ANDROID_IMAGES="system-images;android-22;google_apis;armeabi-v7a"   
+    ANDROID_IMAGES="system-images;android-28;google_apis;armeabi-v7a"   
 ENV ANDROID_SDK_URL https://dl.google.com/android/repository/sdk-tools-linux-${ANDROID_SDK_TOOLS}.zip
 RUN curl -sSL "${ANDROID_SDK_URL}" -o android-sdk-linux.zip \
     && unzip android-sdk-linux.zip -d android-sdk-linux \
