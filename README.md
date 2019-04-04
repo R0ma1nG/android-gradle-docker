@@ -30,7 +30,7 @@ stages:
 build:
   stage: build
   script:
-    - gradlew build
+    - gradle build
   only:
     - master
 
