@@ -8,7 +8,7 @@
 * Android NDK r16b
 * Android SDK (android-28)
 * Android Build-tools (28.0.3)
-* Android System Images(sys-img-armeabi-v7a-android-28,sys-img-armeabi-v7a-android-28)
+* Android System Image(sys-img-x86-android-28)
 * Android Support Libraries
 * Google Play Services
 
@@ -21,8 +21,6 @@ docker build -t r0ma1n/android-gradle-docker
 ## Usage
 
 ### GitLab CI
-
-This is what my .gitlab-ci.yml looks like:
 
 ```yaml
 image: r0ma1n/android-gradle-docker
@@ -42,10 +40,4 @@ build:
 
 ```bash
 docker pull r0ma1n/android-gradle-docker
-```
-
-Change directory to your project directory, then run:
-
-```bash
-docker run --tty --interactive --volume=$(pwd):/opt/workspace --workdir=/opt/workspace --rm r0ma1n/android-gradle-docker  /bin/sh -c "./gradlew build"
 ```
